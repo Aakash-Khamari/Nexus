@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item
+            android:id="@+id/navDashboard"
+            android:icon="@drawable/ic_dashboard_briefcase"
+            android:title="@string/dashboard"
+            />
+
+        <item
+            android:id="@+id/navMap"
+            android:icon="@drawable/ic_location"
+            android:title="@string/map"
+            />
+
+        <item
+            android:id="@+id/navAttendance"
+            android:icon="@drawable/ic_calendar_clock_attendance"
+            android:title="@string/log"
+            />
+
+        <item
+            android:id="@+id/navProfile"
+            android:icon="@drawable/ic_profile"
+            android:title="@string/profile" />
+
+
+    </menu>

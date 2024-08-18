@@ -1,0 +1,16 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#FFFFFF"/> <!-- Your second color here -->
+        </shape>
+    </item>
+
+    <!-- Top Layer: Color for the 40% area -->
+    <item android:bottom="600dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/lightYellow"/> <!-- Your first color here -->
+        </shape>
+    </item>
+
+</layer-list>

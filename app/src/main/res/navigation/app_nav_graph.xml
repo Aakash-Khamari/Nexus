@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_nav_graph"
+    app:startDestination="@id/bottomNav">
+    <fragment
+        android:id="@+id/bottomNav"
+        android:name="com.sovereign.clockify.bottomnav.BottomNav"
+        android:label="fragment_bottom_nav"
+        tools:layout="@layout/fragment_bottom_nav" />
+    <fragment
+        android:id="@+id/dashboard"
+        android:name="com.sovereign.clockify.Dashboard.Dashboard"
+        android:label="fragment_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+    <fragment
+        android:id="@+id/mapScreen"
+        android:name="com.sovereign.clockify.Map.MapScreen"
+        android:label="fragment_map_screen"
+        tools:layout="@layout/fragment_map_screen" />
+    <fragment
+        android:id="@+id/log"
+        android:name="com.sovereign.clockify.Log.Log"
+        android:label="fragment_log"
+        tools:layout="@layout/fragment_log" />
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.sovereign.clockify.Profile.Profile"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+</navigation>
