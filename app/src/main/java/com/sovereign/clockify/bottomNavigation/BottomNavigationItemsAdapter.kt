@@ -10,20 +10,18 @@ import com.sovereign.clockify.Map.MapScreen
 import com.sovereign.clockify.Profile.Profile
 
 
-class BottomNavigationItemsAdapter(
-    fragmentManager: FragmentManager,
-    lifecycle: Lifecycle
-) : FragmentStateAdapter(fragmentManager, lifecycle) {
+class BottomNavigationItemsAdapter(list: List<Fragment>, fm: FragmentManager, lifecycle: Lifecycle):
+    FragmentStateAdapter(fm,lifecycle) {
 
-    override fun getItemCount(): Int = 4
+    private val fragmentList = list
+
+    override fun getItemCount(): Int {
+        return fragmentList.size
+
+    }
 
     override fun createFragment(position: Int): Fragment {
-        return when (position) {
-            0 -> Dashboard()
-            1 -> MapScreen()
-            2 -> Log()
-            3 -> Profile()
-            else -> throw IllegalStateException("Unexpected position $position")
-        }
+        return fragmentList[position]
     }
+
 }

@@ -10,37 +10,19 @@
         android:name="com.sovereign.clockify.bottomNavigation.BottomNavigation"
         android:label="fragment_bottom_navigation"
         tools:layout="@layout/fragment_bottom_navigation" >
-        <action
-            android:id="@+id/action_bottomNavigation_to_dashboard"
-            app:destination="@id/dashboard" />
-        <action
-            android:id="@+id/action_bottomNavigation_to_mapScreen"
-            app:destination="@id/mapScreen" />
-        <action
-            android:id="@+id/action_bottomNavigation_to_log"
-            app:destination="@id/log" />
-        <action
-            android:id="@+id/action_bottomNavigation_to_profile"
-            app:destination="@id/profile" />
     </fragment>
     <fragment
         android:id="@+id/dashboard"
         android:name="com.sovereign.clockify.Dashboard.Dashboard"
         android:label="fragment_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_dashboard_to_log"
+            app:destination="@id/log" />
+    </fragment>
     <fragment
         android:id="@+id/log"
         android:name="com.sovereign.clockify.Log.Log"
         android:label="fragment_log"
         tools:layout="@layout/fragment_log" />
-    <fragment
-        android:id="@+id/mapScreen"
-        android:name="com.sovereign.clockify.Map.MapScreen"
-        android:label="fragment_map_screen"
-        tools:layout="@layout/fragment_map_screen" />
-    <fragment
-        android:id="@+id/profile"
-        android:name="com.sovereign.clockify.Profile.Profile"
-        android:label="fragment_profile"
-        tools:layout="@layout/fragment_profile" />
 </navigation>

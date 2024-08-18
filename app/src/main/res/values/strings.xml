@@ -1,9 +1,15 @@
 <resources>
     <string name="app_name">Clockify</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="profile">Profile</string>
     <string name="log">Log</string>
     <string name="map">Map</string>
     <string name="dashboard">Dashboard</string>
+    <string name="good_morning">Good Morning,</string>
+    <string name="user_name">&#032;Aakash Khamari</string>
+    <string name="clocked_in_text">You are clocked in</string>
+    <string name="clocked_out_text">Let\'s get to work</string>
+    <string name="on_break_text">Let\'s get back to work</string>
+    <string name="take_break">Take a break</string>
+    <string name="end_break">End break</string>
 </resources>
