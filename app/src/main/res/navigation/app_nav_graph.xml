@@ -3,27 +3,41 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/app_nav_graph"
-    app:startDestination="@id/bottomNav">
+    app:startDestination="@id/bottomNavigation">
+
     <fragment
-        android:id="@+id/bottomNav"
-        android:name="com.sovereign.clockify.bottomnav.BottomNav"
-        android:label="fragment_bottom_nav"
-        tools:layout="@layout/fragment_bottom_nav" />
+        android:id="@+id/bottomNavigation"
+        android:name="com.sovereign.clockify.bottomNavigation.BottomNavigation"
+        android:label="fragment_bottom_navigation"
+        tools:layout="@layout/fragment_bottom_navigation" >
+        <action
+            android:id="@+id/action_bottomNavigation_to_dashboard"
+            app:destination="@id/dashboard" />
+        <action
+            android:id="@+id/action_bottomNavigation_to_mapScreen"
+            app:destination="@id/mapScreen" />
+        <action
+            android:id="@+id/action_bottomNavigation_to_log"
+            app:destination="@id/log" />
+        <action
+            android:id="@+id/action_bottomNavigation_to_profile"
+            app:destination="@id/profile" />
+    </fragment>
     <fragment
         android:id="@+id/dashboard"
         android:name="com.sovereign.clockify.Dashboard.Dashboard"
         android:label="fragment_dashboard"
         tools:layout="@layout/fragment_dashboard" />
     <fragment
-        android:id="@+id/mapScreen"
-        android:name="com.sovereign.clockify.Map.MapScreen"
-        android:label="fragment_map_screen"
-        tools:layout="@layout/fragment_map_screen" />
-    <fragment
         android:id="@+id/log"
         android:name="com.sovereign.clockify.Log.Log"
         android:label="fragment_log"
         tools:layout="@layout/fragment_log" />
+    <fragment
+        android:id="@+id/mapScreen"
+        android:name="com.sovereign.clockify.Map.MapScreen"
+        android:label="fragment_map_screen"
+        tools:layout="@layout/fragment_map_screen" />
     <fragment
         android:id="@+id/profile"
         android:name="com.sovereign.clockify.Profile.Profile"
