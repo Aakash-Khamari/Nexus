@@ -106,7 +106,7 @@ class Dashboard : Fragment() {
 
             binding.clockOutImg.visibility = View.GONE
             binding.currentStatusTV.text = getString(R.string.clocked_in_text)
-            binding.currentStatusTV.startAnimation(fadeOut)
+            //binding.currentStatusTV.startAnimation(fadeOut)
             binding.TakeABreakBtn.text = getString(R.string.take_break)
             isOnBreak = false
         }

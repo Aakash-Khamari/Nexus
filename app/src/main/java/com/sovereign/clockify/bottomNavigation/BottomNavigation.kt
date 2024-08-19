@@ -47,6 +47,9 @@ class BottomNavigation : Fragment() {
         val viewPager = binding.homeViewPager
         viewPager.adapter = bottomNavigationItemsAdapter
 
+        // Disable swiping
+        viewPager.isUserInputEnabled = false
+
         // Synchronize ViewPager2 with BottomNavigationView
         viewPager.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
             override fun onPageSelected(position: Int) {

@@ -146,61 +146,57 @@
         app:layout_constraintStart_toEndOf="@+id/rightGuideline"
         app:layout_constraintTop_toBottomOf="@+id/currentStatusLL">
 
-        <TextView
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/clockInBtn"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:layout_weight="1"
-            android:background="@drawable/button_background_selected_bg"
+            style="@style/SelectedButtonStyle"
             android:clickable="true"
             android:text="Clock In"
             android:fontFamily="@font/roboto_bold"
             android:textColor="@color/black"
             android:textSize="17sp"
-            android:visibility="visible"
+            android:visibility="gone"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/TakeABreakBtn"
+            style="@style/SelectedButtonStyle"
             android:layout_width="170dp"
             android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:layout_weight="1"
-            android:background="@drawable/button_background_selected_bg"
             android:clickable="true"
-            android:text="Take a break"
             android:fontFamily="@font/roboto_bold"
+            android:text="Take a break"
             android:textColor="@color/black"
             android:textSize="17sp"
-            android:visibility="gone"
+            android:visibility="visible"
             app:layout_constraintEnd_toStartOf="@+id/clockOutBtn"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintHorizontal_chainStyle="spread_inside"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/clockOutBtn"
             android:layout_width="170dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:layout_weight="1"
-            android:background="@drawable/button_background_unselected_bg"
+            android:layout_height="57dp"
             android:clickable="true"
-            android:text="Clock Out"
             android:fontFamily="@font/roboto_bold"
+            android:text="Clock Out"
             android:textColor="@color/black"
             android:textSize="17sp"
-            android:visibility="gone"
+            android:visibility="visible"
+            app:backgroundTint="@android:color/transparent"
+            app:cornerRadius="0dp"
+            app:layout_constraintBottom_toBottomOf="@+id/TakeABreakBtn"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/TakeABreakBtn"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="@+id/TakeABreakBtn"
+            app:strokeColor="@color/black"
+            app:strokeWidth="2dp" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
